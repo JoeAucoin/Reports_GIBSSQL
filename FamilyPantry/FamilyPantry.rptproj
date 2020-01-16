@@ -95,6 +95,7 @@
     <Report Include="ToyDayReport.rdl" />
     <Report Include="TurkeyReport.rdl" />
     <Report Include="VisitFrequency.rdl" />
+    <Report Include="VisitFrequencyGrouped.rdl" />
     <Report Include="WealthManagementExport.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
