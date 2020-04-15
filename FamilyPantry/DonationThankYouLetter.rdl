@@ -148,9 +148,9 @@
               <Value>ServiceEnterprise1</Value>
               <Sizing>FitProportional</Sizing>
               <Top>0.125in</Top>
-              <Left>5.11333in</Left>
-              <Height>0.88319in</Height>
-              <Width>1.03125in</Width>
+              <Left>4.91541in</Left>
+              <Height>1.17486in</Height>
+              <Width>1.22917in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -175,9 +175,9 @@
               <Value>ID2020Guidestar</Value>
               <Sizing>FitProportional</Sizing>
               <Top>0.125in</Top>
-              <Left>6.30083in</Left>
-              <Height>0.88319in</Height>
-              <Width>0.91667in</Width>
+              <Left>6.19666in</Left>
+              <Height>1.15402in</Height>
+              <Width>1.10417in</Width>
               <ZIndex>2</ZIndex>
               <ToolTip>Seal of Transparency</ToolTip>
               <Style>
