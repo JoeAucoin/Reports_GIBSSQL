@@ -238,21 +238,6 @@ Leo Dunphy</Value>
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Kent Farrenkopf</Value>
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontSize>8pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
-                  <TextDecoration>None</TextDecoration>
-                  <Color>#000000</Color>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
                 <Value>Judeth Frallicciardi
 Larry Lyford</Value>
                 <Style>
