@@ -159,7 +159,7 @@
             </Image>
             <Image Name="Image1">
               <Source>Embedded</Source>
-              <Value>ID30ANNIV_bw</Value>
+              <Value>ID2017FamilyPantry600</Value>
               <Sizing>FitProportional</Sizing>
               <Height>1.78188in</Height>
               <Width>2in</Width>
