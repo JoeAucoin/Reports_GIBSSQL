@@ -6,7 +6,7 @@
     <DataSource Name="Net4Sale">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=sqlgibs;Initial Catalog=inetNet4Sale</ConnectString>
+        <ConnectString>Data Source=gibs.database.windows.net;Initial Catalog=inetNet4Sale</ConnectString>
       </ConnectionProperties>
       <rd:SecurityType>DataBase</rd:SecurityType>
       <rd:DataSourceID>e4af1c1a-8a40-4553-9070-ea11f9378ace</rd:DataSourceID>

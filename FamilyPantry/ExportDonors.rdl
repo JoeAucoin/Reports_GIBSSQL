@@ -1060,7 +1060,7 @@
         <DataSetName>DataSet1</DataSetName>
         <Top>0.88417in</Top>
         <Height>0.5in</Height>
-        <Width>11.64583in</Width>
+        <Width>11.64585in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1071,7 +1071,7 @@
     <Height>1.38417in</Height>
     <Style />
   </Body>
-  <Width>11.64583in</Width>
+  <Width>11.64585in</Width>
   <Page>
     <PageHeight>8.5in</PageHeight>
     <PageWidth>14in</PageWidth>
@@ -1086,7 +1086,7 @@
     <DataSource Name="inetDNN_TheFamilyPantryDirectory">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=sqlgibs;Initial Catalog=inetDNN_TheFamilyPantryDirectory</ConnectString>
+        <ConnectString>Data Source=gibs.database.windows.net;Initial Catalog=inetDNN_TheFamilyPantryDirectory</ConnectString>
       </ConnectionProperties>
       <rd:SecurityType>DataBase</rd:SecurityType>
       <rd:DataSourceID>f2b5fc43-10c6-495e-8350-6885a8cace1a</rd:DataSourceID>

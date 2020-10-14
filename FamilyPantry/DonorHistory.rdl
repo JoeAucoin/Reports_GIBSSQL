@@ -5,7 +5,7 @@
     <DataSource Name="DataSource1">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=sqlgibs;Initial Catalog=inetDNN_TheFamilyPantryDirectory</ConnectString>
+        <ConnectString>Data Source=gibs.database.windows.net;Initial Catalog=inetDNN_TheFamilyPantryDirectory</ConnectString>
       </ConnectionProperties>
       <rd:SecurityType>DataBase</rd:SecurityType>
       <rd:DataSourceID>1c11f9a9-d73d-438a-ad33-f3e0523436fc</rd:DataSourceID>
@@ -386,7 +386,6 @@ ORDER BY Users.UserID, GIBS_DonationTracker.DonationDate</CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1128,7 +1127,7 @@ ORDER BY Users.UserID, GIBS_DonationTracker.DonationDate</CommandText>
             </SortExpressions>
             <Top>1.34667in</Top>
             <Height>1in</Height>
-            <Width>7.98194in</Width>
+            <Width>7.98193in</Width>
             <Style>
               <Border>
                 <Style>None</Style>

@@ -706,7 +706,7 @@ iif(fields!WinterAddress2.value is nothing or fields!WinterAddress2.value ="", "
     <DataSource Name="inetDNN_AHYC">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=sqlgibs;Initial Catalog=inetDNN_AHYC</ConnectString>
+        <ConnectString>Data Source=gibs.database.windows.net;Initial Catalog=inetDNN_AHYC</ConnectString>
       </ConnectionProperties>
       <rd:SecurityType>DataBase</rd:SecurityType>
       <rd:DataSourceID>2efad881-633c-4ed2-9313-d641c1eb1f40</rd:DataSourceID>

@@ -435,7 +435,7 @@
         <DataSetName>GIBS_DoNotMailUsers</DataSetName>
         <Top>2.28in</Top>
         <Height>0.48958in</Height>
-        <Width>6.47917in</Width>
+        <Width>6.47916in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -506,7 +506,7 @@
     <DataSource Name="inetDNN_TheFamilyPantryDirectory">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=SQLGIBS;Initial Catalog=inetDNN_TheFamilyPantryDirectory</ConnectString>
+        <ConnectString>Data Source=gibs.database.windows.net;Initial Catalog=inetDNN_TheFamilyPantryDirectory</ConnectString>
       </ConnectionProperties>
       <rd:SecurityType>DataBase</rd:SecurityType>
       <rd:DataSourceID>d1fbf05f-21de-4254-a8ba-86fe007bdf6e</rd:DataSourceID>

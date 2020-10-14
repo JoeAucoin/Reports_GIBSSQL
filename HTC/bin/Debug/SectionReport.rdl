@@ -5,7 +5,7 @@
     <DataSource Name="inetDNN_HolyTrinity">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=sqlgibs;Initial Catalog=inetDNN_HolyTrinityColumbarium</ConnectString>
+        <ConnectString>Data Source=gibs.database.windows.net;Initial Catalog=inetDNN_HolyTrinityColumbarium</ConnectString>
       </ConnectionProperties>
       <rd:SecurityType>DataBase</rd:SecurityType>
       <rd:DataSourceID>b8bd2db0-356a-4ea7-ae8a-6a444f130db7</rd:DataSourceID>
