@@ -6,7 +6,7 @@
     <DataSource Name="inetDNN_FamilyPantry">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=sqlgibs;Initial Catalog=inetDNN_FamilyPantry</ConnectString>
+        <ConnectString>Data Source=gibs.database.windows.net;Initial Catalog=inetDNN_FamilyPantry</ConnectString>
       </ConnectionProperties>
       <rd:SecurityType>DataBase</rd:SecurityType>
       <rd:DataSourceID>53cb52ae-804e-4840-a1fc-1f5b4e90f495</rd:DataSourceID>

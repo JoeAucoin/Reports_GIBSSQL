@@ -6,7 +6,7 @@
     <DataSource Name="inetDNN_FamilyPantry">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=sqlgibs;Initial Catalog=inetDNN_FamilyPantry</ConnectString>
+        <ConnectString>Data Source=gibs.database.windows.net;Initial Catalog=inetDNN_FamilyPantry</ConnectString>
       </ConnectionProperties>
       <rd:SecurityType>DataBase</rd:SecurityType>
       <rd:DataSourceID>48da2860-8faa-4038-b596-477c88cc03c0</rd:DataSourceID>
@@ -1215,7 +1215,7 @@ ORDER BY LastName</CommandText>
             <DataSetName>DataSet1</DataSetName>
             <Top>1.20708in</Top>
             <Height>0.75in</Height>
-            <Width>10.42708in</Width>
+            <Width>10.42709in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
