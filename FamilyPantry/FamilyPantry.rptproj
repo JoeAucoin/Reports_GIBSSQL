@@ -12,7 +12,7 @@
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
     <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
-    <TargetServerURL>http://sqlgibs/reportserver</TargetServerURL>
+    <TargetServerURL>http://brewster/reportserver</TargetServerURL>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'DebugLocal' ">
     <FullPath>DebugLocal</FullPath>
@@ -77,6 +77,7 @@
     <Report Include="HourlyVisitReport.rdl" />
     <Report Include="LYBUNT_Detail.rdl" />
     <Report Include="LYBUNT_Summary.rdl" />
+    <Report Include="MobilePantry.rdl" />
     <Report Include="PledgeReminder.rdl" />
     <Report Include="PledgeReport.rdl" />
     <Report Include="PledgeReportDetail.rdl" />
@@ -90,6 +91,7 @@
     <Report Include="Reports_DuplicatesDetail.rdl" />
     <Report Include="Report_NewDonors.rdl" />
     <Report Include="sub_LetterheadNames.rdl" />
+    <Report Include="ThanksgivingTurkeySignups.rdl" />
     <Report Include="ThankYouLetters.rdl" />
     <Report Include="TotalDonorsSummary.rdl" />
     <Report Include="TotalDonorsSummaryDetail.rdl" />
