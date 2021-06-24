@@ -71,6 +71,12 @@
     <Report Include="EthnicityByTown.rdl" />
     <Report Include="Export-CellPhone.rdl" />
     <Report Include="ExportDonors.rdl" />
+    <Report Include="ExportDonors2021.rdl" />
+    <Report Include="Export_GIBS_DonationTracker.rdl" />
+    <Report Include="Export_GIBS_DonationTrackerDrives.rdl" />
+    <Report Include="Export_GIBS_DonationTrackerLetters.rdl" />
+    <Report Include="Export_GIBS_DonationTrackerLetterTemplate.rdl" />
+    <Report Include="Export_GIBS_DonationTrackerPledge.rdl" />
     <Report Include="FoodReport.rdl" />
     <Report Include="FoodReportProductCategory.rdl" />
     <Report Include="FoodReportSupplier.rdl" />
