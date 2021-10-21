@@ -715,11 +715,15 @@ ORDER BY GIBS_FBClients.ClientLastName</CommandText>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
-                                  <Style />
+                                  <Value>=Count(IIf(Fields!BikeRaffle.Value, 1, 0))</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox25</rd:DefaultName>
@@ -734,6 +738,7 @@ ORDER BY GIBS_FBClients.ClientLastName</CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1382,7 +1387,7 @@ ORDER BY GIBS_FBClients.ClientLastName</CommandText>
       <DataType>DateTime</DataType>
       <DefaultValue>
         <Values>
-          <Value>=Today()</Value>
+          <Value>=DateAdd("d",1,Today())</Value>
         </Values>
       </DefaultValue>
       <Prompt>End Date</Prompt>
