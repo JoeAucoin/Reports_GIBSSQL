@@ -23,7 +23,14 @@
             <Value>=Parameters!EndDate.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText>SELECT [xMasID]
+        <CommandText>
+Declare @StartDateRUN Varchar(20)
+Set @StartDateRUN = @StartDate
+
+Declare @EndDateRUN Varchar(20)
+SET @EndDateRUN = @EndDate
+
+SELECT [xMasID]
 ,GIBS_FBClients.ClientFirstName + ' ' +  GIBS_FBClients.ClientLastName AS ClientName, GIBS_FBClients.ClientLastName, GIBS_FBClientsAddFamMem.ClAddFamMemFirstName + ' ' + GIBS_FBClientsAddFamMem.ClAddFamMemLastName AS ChildName 
       ,GIBS_FBClientsAddFamMem.ClAddFamMemDOB AS Child_DOB
 	  ,cast(dbo.fn_GIBS_FBClients_GetAge(GIBS_FBClientsAddFamMem.ClAddFamMemDOB,GetDate()) as int) AS Child_Age 
@@ -57,10 +64,11 @@
   
   [xMasYear] = DATEPART(year, @StartDate) AND
 
-  (([GIBS_FBxMas].[LastModifiedOnDate] between CONVERT(DATETIME, @StartDate, 102) AND CONVERT(DATETIME, @EndDate, 102)) 
-  OR ([GIBS_FBxMas].[CreatedOnDate] between CONVERT(DATETIME, @StartDate, 102) AND CONVERT(DATETIME, @EndDate, 102)))
+  (([GIBS_FBxMas].[LastModifiedOnDate] between CONVERT(DATETIME, @StartDateRUN, 102) AND CONVERT(DATETIME, @EndDateRUN, 102)) 
+  OR ([GIBS_FBxMas].[CreatedOnDate] between CONVERT(DATETIME, @StartDateRUN, 102) AND CONVERT(DATETIME, @EndDateRUN, 102)))
 
-ORDER BY GIBS_FBClients.ClientLastName</CommandText>
+ORDER BY GIBS_FBClients.ClientLastName
+</CommandText>
       </Query>
       <Fields>
         <Field Name="xMasID">
@@ -738,7 +746,6 @@ ORDER BY GIBS_FBClients.ClientLastName</CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -999,10 +1006,14 @@ ORDER BY GIBS_FBClients.ClientLastName</CommandText>
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>0.625in</Size>
+                    <Size>0.91666in</Size>
                     <CellContents>
                       <Textbox Name="Textbox18">
                         <CanGrow>true</CanGrow>
+                        <UserSort>
+                          <SortExpression>=Fields!ClientID.Value</SortExpression>
+                          <SortExpressionScope>ClientID</SortExpressionScope>
+                        </UserSort>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
@@ -1040,6 +1051,10 @@ ORDER BY GIBS_FBClients.ClientLastName</CommandText>
                         <CellContents>
                           <Textbox Name="Textbox20">
                             <CanGrow>true</CanGrow>
+                            <UserSort>
+                              <SortExpression>=Fields!ClientLastName.Value</SortExpression>
+                              <SortExpressionScope>ClientID</SortExpressionScope>
+                            </UserSort>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
@@ -1089,7 +1104,7 @@ ORDER BY GIBS_FBClients.ClientLastName</CommandText>
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>0.625in</Size>
+                    <Size>0.91666in</Size>
                     <CellContents>
                       <Textbox Name="ClientID">
                         <CanGrow>true</CanGrow>
@@ -1171,7 +1186,7 @@ ORDER BY GIBS_FBClients.ClientLastName</CommandText>
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>0.625in</Size>
+                    <Size>0.91666in</Size>
                     <CellContents>
                       <Textbox Name="Textbox12">
                         <CanGrow>true</CanGrow>
@@ -1240,7 +1255,7 @@ ORDER BY GIBS_FBClients.ClientLastName</CommandText>
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>0.625in</Size>
+                    <Size>0.91666in</Size>
                     <CellContents>
                       <Textbox Name="Textbox2">
                         <CanGrow>true</CanGrow>
@@ -1316,7 +1331,7 @@ ORDER BY GIBS_FBClients.ClientLastName</CommandText>
             <DataSetName>DataSet1</DataSetName>
             <Top>0.73833in</Top>
             <Height>4.3125in</Height>
-            <Width>10.32292in</Width>
+            <Width>10.61458in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1361,7 +1376,7 @@ ORDER BY GIBS_FBClients.ClientLastName</CommandText>
         <Height>5.05083in</Height>
         <Style />
       </Body>
-      <Width>10.45833in</Width>
+      <Width>10.61458in</Width>
       <Page>
         <PageHeight>8.5in</PageHeight>
         <PageWidth>11in</PageWidth>

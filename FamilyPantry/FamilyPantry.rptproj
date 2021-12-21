@@ -68,6 +68,8 @@
     <Report Include="DriveDetails.rdl" />
     <Report Include="Drives.rdl" />
     <Report Include="EmailExport.rdl" />
+    <Report Include="EmailExportToySignup.rdl" />
+    <Report Include="EmailExportTurkeySignups.rdl" />
     <Report Include="EthnicityByTown.rdl" />
     <Report Include="Export-CellPhone.rdl" />
     <Report Include="ExportDonors.rdl" />
